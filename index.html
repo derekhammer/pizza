@@ -10,40 +10,58 @@
   </head>
   <body>
     <div class="container">
-      <h1>Derek's Pizza</h1>
-      <h2>lets make a pizza</h2>
-      <h3>Build your own pizza using the options below.</h3>
-      <form id="pizza-form">
-      <h4>Size</h4>
-      <ul>
-      <li><input type="radio" value="Small" name="size">  Small</li>
-      <li><input type="radio" value="2" name="size">  Medium</li>
-      <li><input type="radio" value="3" name="size">  Large</li>
-      <li><input type="radio" value="4" name="size">  JUMBO</li>
+      <div class="jumbotron">
 
+      <h1>Derek's Pizza</h1>
+<h3>Build your own pizza using the options below.</h3>
+    </div>
+
+
+      <form id="pizza-form">
+
+      <div class="well">
+        <h4>Size:</h4>
+      <ul>
+      <li><input type="radio" value="small" name="sizes">  Small</li>
+      <li><input type="radio" value="medium" name="sizes">  Medium</li>
+      <li><input type="radio" value="large" name="sizes">  Large</li>
+      <li><input type="radio" value="JUMBO" name="sizes">  JUMBO</li>
+    </div>
     </ul>
-      <h4>Cheese</h4>
+
+      <div class="well">
+        <h4>Cheese:</h4>
       <ul>
-      <li><input type="checkbox" value="Cheddar">  Cheddar</li>
-      <li><input type="checkbox" value="2">  Gouda</li>
-      <li><input type="checkbox" value="2">  Feta</li>
-      <li><input type="checkbox" value="2">  Mozzarella</li>
+      <li><input type="radio" value="cheddar" name="cheese">  Cheddar</li>
+      <li><input type="radio" value="gouda" name="cheese">  Gouda</li>
+      <li><input type="radio" value="feta" name="cheese">  Feta</li>
+      <li><input type="radio" value="mozzarella" name="cheese">  Mozzarella</li>
       </ul>
-      <h4>Toppings</h4>
+      </div>
+
+      <div class="well">
+        <h4>Topping:</h4>
       <ul>
-      <li><input type="checkbox" value="Pepperoni">  Pepperoni</li>
-      <li><input type="checkbox" value="1">  Mushroom</li>
-      <li><input type="checkbox" value="1">  Onion</li>
-      <li><input type="checkbox" value="2">  Sausage</li>
-      <li><input type="checkbox" value="2">  Bacon</li>
+      <li><input type="radio" value="pepperoni" name="topping">  Pepperoni</li>
+      <li><input type="radio" value="mushrooms" name="topping">  Mushroom</li>
+      <li><input type="radio" value="onions" name="topping">  Onion</li>
+      <li><input type="radio" value="sausage" name="topping">  Sausage</li>
+      <li><input type="radio" value="bacon" name="topping">  Bacon</li>
       </ul>
+      </div>
 
     <br>
     <button type="submit" class="button">Make a Pizza!</button>
 
   </form>
+  <br>
+  <div class="well">
 
-      <p>Your Pizza : <span class="finalPizza"></span></p>
+      <p id="test">Your Pizza : </p>
+      <p id="test2">Your Price : </p>
+
+    </div>
+
 </div>
   </body>
 </html>
