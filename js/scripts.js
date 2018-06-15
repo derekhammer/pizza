@@ -61,11 +61,6 @@ if (finalPizza.topping === "pepperoni") {
   return;
 }
 
-    // $(".finalPizza").last().click(function() {
-    //   $(".size").select(finalPizza.size);
-    //   $(".cheese").select(finalPizza.cheese);
-    //   $(".topping").select(finalPizza.topping);
-    // });
 
     document.getElementById("test").innerHTML = "A " + finalPizza.size + " pizza with " + finalPizza.cheese + " cheese and " + finalPizza.topping + " on it!";
     document.getElementById("test2").innerHTML = "Total: $" + price + ".99";
